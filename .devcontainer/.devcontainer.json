@@ -6,6 +6,7 @@
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "postCreateCommand": "devbox install",
+  "postCreateCommand": "./check-devbox.sh",
   "customizations": {
     "vscode": {
       "settings": {
