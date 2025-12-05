@@ -2,7 +2,7 @@
   "name": "aws-from-zero-to-cloud",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/devbox:1": {},
+    "ghcr.io/jetify-com/devbox/devcontainer-feature:0.3.0": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "postCreateCommand": "devbox install",
@@ -20,7 +20,7 @@
     }
   },
   "mounts": [
-    "source=${localWorkspaceFolder}/.aws,target=/home/deandre-cloud1/.aws,type=bind"
+    "source=${localWorkspaceFolder}/.aws,target=/home/andre-cloud1/.aws,type=bind"
   ],
   "remoteUser": "andre-cloud1"
 }
