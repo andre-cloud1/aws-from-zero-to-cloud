@@ -1,14 +1,20 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
-  "packages": ["awscli2@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "awscli2@latest",
+    "terraform@latest",
+    "jq",
+    "docker",
+    "git"
+  ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
-    ],
-    "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ]
-    }
+      "echo '✅ Ambiente Devbox pronto para o curso AWS!'"
+    ]
+  },
+  "scripts": {
+    "test": [
+      "echo \"Este projeto não tem testes definidos ainda.\" && exit 1"
+    ]
   }
 }
