@@ -48,6 +48,12 @@ Execute:
 Você verá as versões das ferramentas instaladas.
 
 
+Deu erro de permissão (/nix/... denied)?
+
+Rode sudo chown -R $USER /nix
+
+Depois rode devbox shell
+
 ---
 
 Esse setup garante que qualquer pessoa que abrir o Codespace tenha o ambiente pronto para seguir o curso sem erros.
