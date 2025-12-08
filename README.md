@@ -1,61 +1,37 @@
-# aws-from-zero-to-cloud
-Documenta minha jornada prática na nuvem, desde os fundamentos até a entrega de soluções completas. O objetivo é mostrar minha evolução “do zero à nuvem”, aplicando boas práticas de segurança, escalabilidade e automação.
+# ☁️ Lab: Automação de S3 com CloudFormation e CLI
 
-## 🚀 Como iniciar o ambiente
+Este laboratório faz parte da minha jornada no treinamento **Descomplicando AWS 2025** da LinuxTips. O objetivo foi provisionar infraestrutura de armazenamento sem utilizar o console gráfico da AWS, focando em automação e IaC.
 
-1. **Crie um Codespace** com:
-   - Branch: `main`
-   - Região: `Europe West`
-   - Máquina: `4-core`
+## 🎯 Objetivos
+- Configurar ambiente de desenvolvimento remoto com **Devbox** e **GitHub Codespaces**.
+- Criar um Bucket S3 utilizando **AWS CloudFormation** (IaC).
+- Gerenciar objetos (upload/delete) utilizando **AWS CLI**.
 
-2. **Aguarde a criação do container** com base no `.devcontainer.json`
+## 🛠️ Ferramentas Utilizadas
+- **AWS CLI**: Para interação via terminal.
+- **CloudFormation**: Para provisionamento de infraestrutura (YAML).
+- **Devbox**: Para isolamento do ambiente e instalação de ferramentas (awscli, terraform, jq).
+- **Git/GitHub**: Versionamento de código.
 
-3. **Ative o ambiente Devbox**:
-   ```bash
-   devbox shell
+## 🚧 Desafios e Soluções
+Durante a execução, enfrentei cenários reais de troubleshooting:
 
-   Verifique as ferramentas:
+1.  **Erro de Permissão no Nix/Devbox:**
+    - *Problema:* O ambiente não iniciava por falta de permissão na pasta `/nix`.
+    - *Solução:* Ajuste de ownership com `sudo chown -R $USER /nix`.
 
-aws --version
-terraform --version
+2.  **Sintaxe do CloudFormation:**
+    - *Problema:* Erro `Resource name... is non alphanumeric` ao tentar criar a stack.
+    - *Solução:* Identifiquei que nomes lógicos no YAML não aceitam hífens (`-`). Ajustei de `s3-websiteBucket` para `S3WebsiteBucket`.
 
-🧰 Ferramentas instaladas
+3.  **Deploy e Upload:**
+    - Stack criada com sucesso (`CREATE_COMPLETE`).
+    - Upload da badge de certificação realizado via CLI: `aws s3 cp imagem.png s3://meu-bucket/`.
 
-AWS CLI
-
-Terraform
-
-jq
-
-Docker
-
-Git
-
-📦 Arquivos importantes
-
-devbox.json: define os pacotes do ambiente
-
-.devcontainer.json: configura o container no Codespace
-
-init-devbox.sh: script para ativar e testar o ambiente
-
-🧪 Teste rápido
-
-Execute:
-
-./init-devbox.sh
-
-Você verá as versões das ferramentas instaladas.
-
-
-Deu erro de permissão (/nix/... denied)?
-
-Rode sudo chown -R $USER /nix
-
-Depois rode devbox shell
+## 📚 Aprendizados
+- A importância de "Resources" bem definidos no template YAML.
+- Como utilizar o `aws s3 presign` para gerar URLs temporárias seguras.
+- A diferença entre fazer login (Autenticação) e ter permissão de criar recursos (Autorização - IAM).
 
 ---
-
-Esse setup garante que qualquer pessoa que abrir o Codespace tenha o ambiente pronto para seguir o curso sem erros.
-
-Posso adicionar instruções para contribuir com o projeto ou configurar variáveis AWS se quiser expandir o README.
+*Este repositório documenta minha evolução técnica de Zero to Cloud.* 🚀
