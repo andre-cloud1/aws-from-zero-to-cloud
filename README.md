@@ -1,37 +1,28 @@
-# ☁️ Lab: Automação de S3 com CloudFormation e CLI
+# ☁️ AWS From Zero to Cloud
 
-Este laboratório faz parte da minha jornada no treinamento **Descomplicando AWS 2025** da LinuxTips. O objetivo foi provisionar infraestrutura de armazenamento sem utilizar o console gráfico da AWS, focando em automação e IaC.
+Este repositório documenta minha jornada prática rumo à especialização em Cloud Computing e FinOps. Aqui centralizo todos os laboratórios, scripts e automações desenvolvidas durante o treinamento **Descomplicando AWS** (LinuxTips) e estudos complementares.
 
-## 🎯 Objetivos
-- Configurar ambiente de desenvolvimento remoto com **Devbox** e **GitHub Codespaces**.
-- Criar um Bucket S3 utilizando **AWS CloudFormation** (IaC).
-- Gerenciar objetos (upload/delete) utilizando **AWS CLI**.
+## 🎯 Objetivo
+Demonstrar evolução técnica saindo do "ClickOps" (Console) para **Infraestrutura como Código (IaC)**, Automação e boas práticas de Segurança e Custos.
 
-## 🛠️ Ferramentas Utilizadas
-- **AWS CLI**: Para interação via terminal.
-- **CloudFormation**: Para provisionamento de infraestrutura (YAML).
-- **Devbox**: Para isolamento do ambiente e instalação de ferramentas (awscli, terraform, jq).
-- **Git/GitHub**: Versionamento de código.
+## 📚 Laboratórios Concluídos
 
-## 🚧 Desafios e Soluções
-Durante a execução, enfrentei cenários reais de troubleshooting:
+| Data | Lab / Módulo | Ferramentas | O que aprendi (Resumo) |
+| :--- | :--- | :--- | :--- |
+| 08/12/2025 | **Automação S3 & IaC** | CloudFormation, AWS CLI, S3 | Provisionamento de Bucket via código YAML, upload de objetos via terminal e geração de URLs assinadas. Correção de erros de permissão (IAM) e sintaxe. |
+| *Em breve* | *EC2 & Redes* | *EC2, VPC* |  |
 
-1.  **Erro de Permissão no Nix/Devbox:**
-    - *Problema:* O ambiente não iniciava por falta de permissão na pasta `/nix`.
-    - *Solução:* Ajuste de ownership com `sudo chown -R $USER /nix`.
+## 🛠️ Stack Tecnológica
+- **IaC:** AWS CloudFormation, Terraform
+- **CLI:** AWS CLI, Bash Scripts
+- **Ambiente:** GitHub Codespaces, Devbox (Nix)
+- **Controle de Versão:** Git/GitHub
 
-2.  **Sintaxe do CloudFormation:**
-    - *Problema:* Erro `Resource name... is non alphanumeric` ao tentar criar a stack.
-    - *Solução:* Identifiquei que nomes lógicos no YAML não aceitam hífens (`-`). Ajustei de `s3-websiteBucket` para `S3WebsiteBucket`.
-
-3.  **Deploy e Upload:**
-    - Stack criada com sucesso (`CREATE_COMPLETE`).
-    - Upload da badge de certificação realizado via CLI: `aws s3 cp imagem.png s3://meu-bucket/`.
-
-## 📚 Aprendizados
-- A importância de "Resources" bem definidos no template YAML.
-- Como utilizar o `aws s3 presign` para gerar URLs temporárias seguras.
-- A diferença entre fazer login (Autenticação) e ter permissão de criar recursos (Autorização - IAM).
+## 💰 FinOps & Custos
+Em cada laboratório, aplico a mentalidade de eficiência de custos:
+- Uso consciente do **Free Tier**.
+- Limpeza de recursos (`delete-stack`) imediatamente após o uso.
+- Análise de custos de armazenamento e transferência de dados (Data Transfer Out).
 
 ---
-*Este repositório documenta minha evolução técnica de Zero to Cloud.* 🚀
+*Repositório mantido por [André Cloud](https://www.linkedin.com/in/andre-cloud1)* 🚀
