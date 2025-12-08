@@ -7,9 +7,9 @@ Demonstrar evolução técnica saindo do "ClickOps" (Console) para **Infraestrut
 
 ## 📚 Laboratórios Concluídos
 
-| Data | Lab / Módulo | Ferramentas | O que aprendi (Resumo) |
-| :--- | :--- | :--- | :--- |
-| 08/12/2025 | **Automação S3 & IaC** | CloudFormation, AWS CLI, S3 | Provisionamento de Bucket via código YAML, upload de objetos via terminal e geração de URLs assinadas. Correção de erros de permissão (IAM) e sintaxe. |
+| Data | Lab / Módulo | Ferramentas | O que aprendi (Resumo) | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| 08/12/2025 | **Automação S3 & IaC** | CloudFormation, AWS CLI, S3 | Provisionamento de Bucket via código YAML, upload de objetos via terminal e geração de URLs assinadas. Correção de erros de permissão (IAM) e sintaxe. | [Link](./automation-s3-cloudformation-cli/) |
 | *Em breve* | *EC2 & Redes* | *EC2, VPC* |  |
 
 ## 🛠️ Stack Tecnológica
