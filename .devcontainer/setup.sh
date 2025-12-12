@@ -6,7 +6,7 @@ echo "🔧 Iniciando setup do ambiente Devbox..."
 # Instala devbox se não estiver presente
 if ! command -v devbox &>/dev/null; then
   echo "📦 Instalando Devbox..."
-  curl -fsSL https://get.jetify.com/devbox | bash
+  curl -fsSL https://get.jetify.com/devbox | bash -s -- -f
   export PATH="$HOME/.devbox/bin:$PATH"
 fi
 
