@@ -5,7 +5,7 @@
     "ghcr.io/jetify-com/devbox/devcontainer-feature:0.3.0": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "postCreateCommand": "devbox install",
+  "postCreateCommand": "sudo chown -R $USER /nix && devbox install",
   "postCreateCommand": "./check-devbox.sh",
   "customizations": {
     "vscode": {
