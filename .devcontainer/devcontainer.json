@@ -1,0 +1,25 @@
+{
+"name": "aws-from-zero-to-cloud",
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+"features": {
+"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+},
+"postCreateCommand": "bash /workspaces/aws-from-zero-to-cloud/.devcontainer/setup.sh",
+"customizations": {
+"vscode": {
+"settings": {
+"terminal.integrated.defaultProfile.linux": "bash"
+},
+"extensions": [
+"ms-azuretools.vscode-docker",
+"hashicorp.terraform",
+"amazonwebservices.aws-toolkit-vscode",
+"GitHub.vscode-pull-request-github"
+]
+}
+},
+"mounts": [
+"source=${localWorkspaceFolder}/.aws,target=/home/vscode/.aws,type=bind"
+],
+"remoteUser": "vscode"
+}
