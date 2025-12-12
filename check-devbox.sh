@@ -10,9 +10,11 @@ if ! command -v devbox &> /dev/null; then
 fi
 
 # Executa devbox install se necessário
-if [[ "$PS1" != *"(devbox)"* ]]; then
+if [[ -z "$DEVBOX_SHELL" ]]; then
   echo "🔺 Devbox não está ativo. Rodando 'devbox install'..."
   devbox install
+else
+  echo "✅ Ambiente Devbox detectado."
 fi
 
 # Lista de comandos a verificar
