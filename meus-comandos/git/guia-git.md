@@ -12,7 +12,7 @@ Para não esquecer a ordem das coisas:
 2.  **`Ctrl + S`**: Você embrulhou o objeto em jornal (Salvou no disco).
 3.  **`git status`**: Terminou uma tarefa? -> Confere
 4.  **`git add .`**: Você colocou os objetos embrulhados dentro da **caixa de papelão** (Área de preparação/Stage).
-5.  **`git commit`**: Você **lacrou a caixa** com fita e colou uma etiqueta descrevendo o conteúdo (Salvou na história).
+5.  **`git commit -m "MENSAGE-AQUI"`**: Você **lacrou a caixa** com fita e colou uma etiqueta descrevendo o conteúdo (Salvou na história).
 6.  **`git push`**: O **caminhão** levou a caixa para a casa nova na nuvem (Enviou para o GitHub).
 
 ---
