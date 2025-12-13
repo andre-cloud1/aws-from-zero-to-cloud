@@ -10,6 +10,7 @@ Antes de começar, saiba quem você é.
 | Ação | Comando |
 | :--- | :--- |
 | **Logar / Configurar** | `aws configure` |
+| **Logar / Configurar** | `aws configure --profile=USUARIO-DA-CONTA-AQUI` |
 | **Quem sou eu?** (Ver conta/ARN) | `aws sts get-caller-identity` |
 | **Testar credenciais** | `aws sts get-caller-identity --query "Arn" --output text` |
 

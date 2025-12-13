@@ -1,0 +1,6 @@
+~		casa
+pwd		Onde estou?
+cd		Home do usuário
+cd ..	 	Voltar uma pasta
+cd -		Anterior
+Nunca digite nomes de pastas inteiros! Digite as primeiras 3 letras e aperte a tecla TAB.

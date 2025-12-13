@@ -10,7 +10,7 @@ devbox install
 sudo mkdir -p /nix
 sudo chown -R "$(id -un)":"$(id -gn)" /nix || true
 
-# Acesso Interativo / Cria um ambiente isolado 
+# Ativar o ambiente Devbox
 devbox shell
 
 # Verifica ambiente ✅ Executando verificação de ambiente...
@@ -18,4 +18,4 @@ bash .devcontainer/setup.sh
 bash ./check-devbox.sh
 
 
-✅ Setup completo!"
+✅ Setup completo!
