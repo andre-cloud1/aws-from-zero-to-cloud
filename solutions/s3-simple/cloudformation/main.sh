@@ -6,7 +6,7 @@ set -e
 # Configuration
 STACK_NAME="s3-simple"
 TEMPLATE_FILE="main.cfn.yaml"
-IMAGE_FILE="guiri_vanlife.jpg"
+IMAGE_FILE="aws-certified-cloud-practitioner.png"
 
 aws cloudformation deploy \
     --template-file "$TEMPLATE_FILE" \
