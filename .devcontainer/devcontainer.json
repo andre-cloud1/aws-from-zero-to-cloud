@@ -24,7 +24,8 @@
         "aws-scripting-guy.cform",
         "vscjava.vscode-java-pack",
         "redhat.java",
-        "ms-python.python"
+        "ms-python.python",
+        "1Password.op-vscode"
       ]
     }
   }
