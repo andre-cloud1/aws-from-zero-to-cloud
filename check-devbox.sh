@@ -9,10 +9,12 @@ if ! command -v devbox &> /dev/null; then
   exit 1
 fi
 
-# Executa devbox install se necessário
-if [[ "$PS1" != *"(devbox)"* ]]; then
-  echo "🔺 Devbox não está ativo. Rodando 'devbox install'..."
+# Verifica se o terraform (instalado pelo devbox) está acessível
+if ! command -v terraform &> /dev/null; then
+  echo "🔺 Devbox não está ativo (Terraform não encontrado). Rodando 'devbox install'..."
   devbox install
+else
+  echo "✅ Ambiente Devbox detectado (Ferramentas OK)."
 fi
 
 # Lista de comandos a verificar

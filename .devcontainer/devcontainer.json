@@ -1,0 +1,32 @@
+{
+  "name": "AWS Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers-extra/features/direnv:1": {},
+    "ghcr.io/devcontainers/features/java:1": {
+      "installMaven": true,
+      "jdkDistro": "graalce"
+    },
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/customink/codespaces-features/sam-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/aws-cdk:2": {},
+    "ghcr.io/devcontainers-extra/features/amplify-cli:2": {},
+    "ghcr.io/rails/devcontainer/features/postgres-client:1.1.3": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/joshspicer/more-features/cowsay:1": {}
+  },
+  "postCreateCommand": "./scripts/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "aws-scripting-guy.cform",
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "ms-python.python",
+        "1Password.op-vscode"
+      ]
+    }
+  }
+}
