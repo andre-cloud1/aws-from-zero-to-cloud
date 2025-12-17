@@ -615,69 +615,9 @@
         }
       }
     },
-    "python313Packages.cfn-lint@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#python313Packages.cfn-lint",
-      "source": "devbox-search",
-      "version": "1.38.3",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/9cm504cp86bmcmn2h80xdvywcikywgla-python3.13-cfn-lint-1.38.3",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/z15phzl8w4x779wbbip7d6503044s4dq-python3.13-cfn-lint-1.38.3-dist"
-            }
-          ],
-          "store_path": "/nix/store/9cm504cp86bmcmn2h80xdvywcikywgla-python3.13-cfn-lint-1.38.3"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/wm118s01w4pmcwmr35csii1y9g2vqygs-python3.13-cfn-lint-1.38.3",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/gfdgxn4w227pcsvgqpl0nqcnqfclx52r-python3.13-cfn-lint-1.38.3-dist"
-            }
-          ],
-          "store_path": "/nix/store/wm118s01w4pmcwmr35csii1y9g2vqygs-python3.13-cfn-lint-1.38.3"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/2fa4abd0d7ckslj03dvkwg08yy02qk2k-python3.13-cfn-lint-1.38.3",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/rxfqxmbr0kxmcfy09402shad9irngarn-python3.13-cfn-lint-1.38.3-dist"
-            }
-          ],
-          "store_path": "/nix/store/2fa4abd0d7ckslj03dvkwg08yy02qk2k-python3.13-cfn-lint-1.38.3"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/jicxg7p5cn6s1lkl68a9ra5a4b3yb6bw-python3.13-cfn-lint-1.38.3",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/dd6r54zv6pzsxy1rk1xjvvkillfg5khb-python3.13-cfn-lint-1.38.3-dist"
-            }
-          ],
-          "store_path": "/nix/store/jicxg7p5cn6s1lkl68a9ra5a4b3yb6bw-python3.13-cfn-lint-1.38.3"
-        }
-      }
+    "python3Packages.cfn-lint": {
+      "resolved": "github:NixOS/nixpkgs/af84f9d270d404c17699522fab95bbf928a2d92f#python3Packages.cfn-lint",
+      "source": "nixpkg"
     },
     "quarkus@latest": {
       "last_modified": "2025-12-09T08:49:39Z",
