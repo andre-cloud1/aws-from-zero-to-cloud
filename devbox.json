@@ -5,7 +5,18 @@
     "terraform@latest",
     "jq",
     "docker",
-    "git"
+    "git",
+    "python313Packages.cfn-lint@latest",
+    "nodejs@latest",
+    "nodePackages.aws-cdk@latest",
+    "jq@latest",
+    "aws-sam-cli@latest",
+    "quarkus@latest",
+    "maven@latest",
+    "hugo@latest",
+    "jreleaser-cli@latest",
+    "htop@latest",
+    "apacheHttpd@latest"
   ],
   "shell": {
     "init_hook": [
