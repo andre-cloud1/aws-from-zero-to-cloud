@@ -17,6 +17,9 @@ Para não esquecer a ordem das coisas:
 5.  **`git commit -m "MENSAGE-AQUI"`**: Você **lacrou a caixa** com fita e colou uma etiqueta descrevendo o conteúdo (Salvou na história).
 6.  **`git push`**: O **caminhão** levou a caixa para a casa nova na nuvem (Enviou para o GitHub).
 
+7.  **``**:  
+
+
 ---
 
 ## 2. Configuração Inicial ⚙️
@@ -35,3 +38,4 @@ Para não esquecer a ordem das coisas:
 git log --oneline               ,Mostra o histórico resumido dos últimos commits.       ,Seguro.
 git restore .                   ,Desfaz alterações nos arquivos que ainda não foram commitados. ,Perde o que você digitou hoje.
 git reset --hard origin/main    ,Apaga TUDO que você fez localmente e deixa idêntico ao GitHub. ,A Bomba Atômica. Use só se quebrar tudo.
+git lazy "Sua mensagem aqui"    ,add + commit + push        git config --global alias.lazy '!f() { git add . && git commit -m "$1" && git push origin main; }; f'
