@@ -3,9 +3,18 @@
   "packages": [
     "awscli2@latest",
     "terraform@latest",
-    "jq",
+    "jq@latest",
     "docker",
-    "git"
+    "git",
+    "python3Packages.cfn-lint",
+    "nodejs@latest",
+    "nodePackages.aws-cdk@latest",
+    "quarkus@latest",
+    "maven@latest",
+    "hugo@latest",
+    "jreleaser-cli@latest",
+    "htop@latest",
+    "apacheHttpd@latest"
   ],
   "shell": {
     "init_hook": [

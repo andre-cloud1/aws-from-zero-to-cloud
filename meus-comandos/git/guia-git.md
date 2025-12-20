@@ -35,3 +35,4 @@ Para não esquecer a ordem das coisas:
 git log --oneline               ,Mostra o histórico resumido dos últimos commits.       ,Seguro.
 git restore .                   ,Desfaz alterações nos arquivos que ainda não foram commitados. ,Perde o que você digitou hoje.
 git reset --hard origin/main    ,Apaga TUDO que você fez localmente e deixa idêntico ao GitHub. ,A Bomba Atômica. Use só se quebrar tudo.
+git lazy "Sua mensagem aqui"    ,add + commit + push        git config --global alias.lazy '!f() { git add . && git commit -m "$1" && git push origin main; }; f'
